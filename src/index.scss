@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'STIX Two Text';
+  src: url(./assets/fonts/STIXTwoText-Bold.ttf);
+}
+
+.kc-base-html {
+  background: none;
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  width: 100%;
+
+  body {
+    .kc-login-form-page {
+      padding-bottom: 2.3rem;
+    
+      .kc-login-form-header {
+        div {
+          span {
+            color: black;
+            font-family: 'STIX Two Text', sans-serif;
+          }
+        }
+      }
+
+      .kc-login-form-card { 
+        background-color: #fff;
+        border-radius: 5px;
+        margin: 0 2rem;
+      }
+    }
+  }
+}
