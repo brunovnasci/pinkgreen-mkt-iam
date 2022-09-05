@@ -2,7 +2,6 @@ import { getMsg, useFormValidationSlice } from "keycloakify";
 import { Template } from "keycloakify/lib/components/Template";
 import { KcProps } from "keycloakify/lib/components/KcProps";
 import { memo, useEffect, useState } from "react";
-import { useCssAndCx } from "tss-react";
 import { useCallbackFactory } from "powerhooks/useCallbackFactory";
 import { KcContext } from "../context";
 import Input from "../../components/Input";
@@ -21,8 +20,6 @@ export const RegisterUserProfile = memo(({ kcContext, ...props }: { kcContext: K
     } = useFormValidationSlice({kcContext});
 
     const { msg, advancedMsg, msgStr } = getMsg(kcContext);
-
-    const { cx } = useCssAndCx();
 
     const [isFomSubmittable, setIsFomSubmittable] = useState(false);
 
@@ -58,14 +55,13 @@ export const RegisterUserProfile = memo(({ kcContext, ...props }: { kcContext: K
             doFetchDefaultThemeResources={true}
             headerNode={msg("registerTitle")}
             formNode={
-                <form id="kc-register-form" className={cx(props.kcFormClass)} action={url.registrationAction} method="post">
+                <form action={url.registrationAction} method="post">
                     {attributesWithPassword.map((attribute, i) => {
                         const { value, displayableErrors } = fieldStateByAttributeName[attribute.name];
 
                         switch(attribute.name) {
                             case "phone": 
                                 return <InputMask
-                                    id={attribute.name}
                                     key={attribute.name}
                                     name={attribute.name}
                                     mask="telephone"
@@ -79,7 +75,6 @@ export const RegisterUserProfile = memo(({ kcContext, ...props }: { kcContext: K
                                 />
                             case "CPF":
                                 return <InputMask
-                                    id={attribute.name}
                                     key={attribute.name}
                                     name={attribute.name}
                                     mask="cpf"
@@ -94,7 +89,6 @@ export const RegisterUserProfile = memo(({ kcContext, ...props }: { kcContext: K
                             case "password-confirm":
                             case "password":
                                 return <Input
-                                    id={attribute.name}
                                     key={attribute.name}
                                     name={attribute.name}
                                     label={advancedMsg(attribute.displayName)}
@@ -107,7 +101,6 @@ export const RegisterUserProfile = memo(({ kcContext, ...props }: { kcContext: K
                                 />
                             default:
                                 return <Input
-                                    id={attribute.name}
                                     key={attribute.name}
                                     label={advancedMsg(attribute.displayName)}
                                     type="text"
@@ -115,7 +108,6 @@ export const RegisterUserProfile = memo(({ kcContext, ...props }: { kcContext: K
                                     onBlur={onBlurFactory(attribute.name)}
                                     name={attribute.name}
                                     value={value}
-                                    className={cx(props.kcInputClass)}
                                     aria-invalid={displayableErrors.length !== 0}
                                     disabled={attribute.readOnly}
                                     autoComplete={attribute.autocomplete}
