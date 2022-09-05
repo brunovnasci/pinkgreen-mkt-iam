@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'Roboto';
-  src: url(./assets/fonts/Roboto-Regular.ttf);
+  src: url(../assets/fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
   font-family: 'STIX Two Text';
-  src: url(./assets/fonts/STIXTwoText-Bold.ttf);
+  src: url(../assets/fonts/STIXTwoText-Bold.ttf);
 }
 
-.kc-base-html {
+.kcBaseHtml {
   background: none;
   background-color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -16,10 +16,10 @@
   width: 100%;
 
   body {
-    .kc-login-form-page {
+    .kcLoginFormPage {
       padding-bottom: 2.3rem;
     
-      .kc-login-form-header {
+      .kcLoginFormHeader {
         div {
           span {
             color: black;
@@ -28,7 +28,7 @@
         }
       }
 
-      .kc-login-form-card { 
+      .kcLoginFormCard { 
         background-color: #fff;
         border-radius: 5px;
         margin: 0 2rem;

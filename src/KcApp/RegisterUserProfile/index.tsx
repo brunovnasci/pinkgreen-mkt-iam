@@ -4,10 +4,10 @@ import { KcProps } from "keycloakify/lib/components/KcProps";
 import { memo, useEffect, useState } from "react";
 import { useCssAndCx } from "tss-react";
 import { useCallbackFactory } from "powerhooks/useCallbackFactory";
-import { KcContext } from "../kcContext";
+import { KcContext } from "../context";
 import Input from "../../components/Input";
 import InputMask from "../../components/InputMask";
-import styles from "./RegisterUserProfile.module.scss";
+import styles from "./index.module.scss";
 
 type KcContext_RegisterUserProfile = Extract<KcContext, { pageId: "register-user-profile.ftl"; }>;
 
