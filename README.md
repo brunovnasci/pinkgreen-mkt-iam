@@ -1,46 +1,36 @@
-# Getting Started with Create React App
+# Pinkgreen MKT - IAM
+Custom Keycloak pages implementation powered by [Keycloakify](https://www.keycloakify.dev/).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Requirements
+  * Java 11
+  * Maven
+  * Docker
+  * Node.js 14
+  * Yarn
 
-## Available Scripts
+## Steps 
+### Build the project
+  * Before **developing** or **build final Keycloak image**, you need to build the project, run the follow command to do it:
+    ```bash
+    $ yarn keycloak
+    ```
 
-In the project directory, you can run:
+### Start development server
+  * Run the follow command to start development server:
+    ```bash
+    $ yarn start
+    ```
+  * The application will be opened on your browser and now you are able to code! 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Building the final Keycloak image
+  * Then, you need to build the docker image:
+    ```bash
+    $ docker build . -t pinkgreen-mkt-iam:1.0.0
+    ```
+  * Finally you can run the keycloak instance:
+    ```bash
+    $ docker run --name pinkgreen-mkt-iam -p 8080:8080 -it pinkgreen-mkt-iam:1.0.0 start-dev --import-realm
+    ```
+  * The instance will be hosted on http://localhost:8080/. 
+  * Access the Admin console with `username: admin` and `password: admin` on http://localhost:8080/admin.
