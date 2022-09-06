@@ -4,14 +4,22 @@ import { getKcContext } from "keycloakify";
 export const { kcContext } = getKcContext<
 	{
 		pageId: "register-user-profile.ftl";
+	} |
+	{
+		pageId: "login.ftl";
 	}
 >({
-	"mockPageId": "register-user-profile.ftl",
+	"mockPageId": "login.ftl",
 	"mockData": [
 		{
 			"pageId": "register-user-profile.ftl",
 			"locale": {
 				"currentLanguageTag": "pt-BR"
+			},
+			"realm": {
+				"name": "pinkgreen",
+				"displayName": "Pinkgreen",
+				"displayNameHtml": "Pinkgreen"
 			},
 			"profile": {
 				"attributes": [
@@ -66,7 +74,17 @@ export const { kcContext } = getKcContext<
 				],
 			},
 		},
-
+		{
+			"pageId": "login.ftl",
+			"locale": {
+				"currentLanguageTag": "pt-BR"
+			},
+			"realm": {
+				"name": "pinkgreen",
+				"displayName": "Pinkgreen",
+				"displayNameHtml": "Pinkgreen"
+			}
+		}
 	]
 });
 

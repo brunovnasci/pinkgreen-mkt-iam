@@ -3,6 +3,7 @@ import type { KcContext } from "./context";
 import { KcProps } from "keycloakify";
 import { KcApp as KcAppBase } from "keycloakify/lib/components/KcApp";
 import { RegisterUserProfile } from "./RegisterUserProfile";
+import { Login } from "./Login";
 import style from "./index.module.scss";
 import "./messages";
 
@@ -14,10 +15,12 @@ export const KcApp = memo(({ kcContext, ...props }: { kcContext: KcContext; } & 
         "kcLoginClass": [ style.kcLoginFormPage],
         "kcHeaderClass": [ style.kcLoginFormHeader ],
         "kcFormCardClass": [ style.kcLoginFormCard ],
+        "kcSignUpClass": [ style.kcSignUpCard ]
     }
 
     switch (kcContext.pageId) {
         case "register-user-profile.ftl":  return <RegisterUserProfile {...{ kcContext, ...kcProps }} />;
+        case "login.ftl": return <Login {...{kcContext, ...kcProps}} />
         default: return <KcAppBase {...{ kcContext, ...kcProps }} />;
     }
 });

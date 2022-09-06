@@ -3,6 +3,7 @@ import { kcMessages } from "keycloakify";
 Object.assign(
 	kcMessages["en"],
 	{
+		"orWord": "Or",
 		"phone": "Phone",
 		"phoneValueError": "Invalid phone!",
 		"cpf": "CPF",
@@ -13,6 +14,7 @@ Object.assign(
 Object.assign(
 	kcMessages["pt-BR"],
 	{
+		"orWord": "Ou",
 		"phone": "Celular",
 		"phoneValueError": "Celular inválido!",
 		"cpf": "CPF",
