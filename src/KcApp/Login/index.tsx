@@ -109,12 +109,12 @@ export const Login = memo(({ kcContext, ...props }: { kcContext: KcContext_Login
                         <div className={style.signupSeparator}>
                             <span className={style.signupSeparatorLabel}>{msgStr("orWord")}</span>
                         </div>
-                        <form action={url.registrationUrl} className={style.signupContainer}>
-                            <input
-                                type="submit"
-                                value={msgStr("doRegister")}
-                            />
-                        </form>
+                        <input
+                            type="button"
+                            className={style.signupButton}
+                            onClick={() => window.location.href=url.registrationUrl}
+                            value={msgStr("doRegister")}
+                        />
                     </div>
                 )
             }

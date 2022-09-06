@@ -9,7 +9,7 @@ export const { kcContext } = getKcContext<
 		pageId: "login.ftl";
 	}
 >({
-	"mockPageId": "login.ftl",
+	//"mockPageId": "login.ftl",
 	"mockData": [
 		{
 			"pageId": "register-user-profile.ftl",

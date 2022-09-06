@@ -43,16 +43,14 @@
         }
     }
 
-    .signupContainer {
-        input {
-            font-size: 14px;
-            height: 3rem;
-            line-height: 1.3333333;
-            border-radius: 1px;
-            width: 100%;
-            background-color: #000;
-            color: #fff;
-            border: none;
-        }
+    .signupButton {
+        font-size: 14px;
+        height: 3rem;
+        line-height: 1.3333333;
+        border-radius: 1px;
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        border: none;
     }
 }
