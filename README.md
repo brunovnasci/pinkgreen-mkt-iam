@@ -16,6 +16,7 @@ Custom Keycloak pages implementation powered by [Keycloakify](https://www.keyclo
     ```
 
 ### Start development server
+  * Open the [KcContext file](https://github.com/brunovnasci/pinkgreen-mkt-iam/blob/main/src/KcApp/context/index.ts) and uncomment the `mockPageId` attribute.
   * Run the follow command to start development server:
     ```bash
     $ yarn start
