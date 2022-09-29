@@ -7,6 +7,9 @@ export const { kcContext } = getKcContext<
 	} |
 	{
 		pageId: "login.ftl";
+	} |
+	{
+		pageId: "logout-confirm.ftl";
 	}
 >({
 	//"mockPageId": "login.ftl",
@@ -76,6 +79,17 @@ export const { kcContext } = getKcContext<
 		},
 		{
 			"pageId": "login.ftl",
+			"locale": {
+				"currentLanguageTag": "pt-BR"
+			},
+			"realm": {
+				"name": "pinkgreen",
+				"displayName": "Pinkgreen",
+				"displayNameHtml": "Pinkgreen"
+			}
+		},
+		{
+			"pageId": "logout-confirm.ftl",
 			"locale": {
 				"currentLanguageTag": "pt-BR"
 			},

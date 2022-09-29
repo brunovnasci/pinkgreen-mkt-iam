@@ -18,6 +18,9 @@ Object.assign(
 		"phone": "Celular",
 		"phoneValueError": "Celular inválido!",
 		"cpf": "CPF",
-		"cpfValueError": "CPF inválido!"
+		"cpfValueError": "CPF inválido!",
+		"logoutConfirmTitle": "Confirmar logout",
+		"logoutConfirmHeader": "Você realmente deseja realizar logout?",
+		"doLogout": "Logout"
 	}
 );
