@@ -10,9 +10,12 @@ export const { kcContext } = getKcContext<
 	} |
 	{
 		pageId: "logout-confirm.ftl";
+	} |
+	{
+		pageId: "error.ftl";
 	}
 >({
-	//"mockPageId": "login.ftl",
+	"mockPageId": "error.ftl",
 	"mockData": [
 		{
 			"pageId": "register-user-profile.ftl",
@@ -90,6 +93,17 @@ export const { kcContext } = getKcContext<
 		},
 		{
 			"pageId": "logout-confirm.ftl",
+			"locale": {
+				"currentLanguageTag": "pt-BR"
+			},
+			"realm": {
+				"name": "pinkgreen",
+				"displayName": "Pinkgreen",
+				"displayNameHtml": "Pinkgreen"
+			}
+		},
+		{
+			"pageId": "error.ftl",
 			"locale": {
 				"currentLanguageTag": "pt-BR"
 			},
