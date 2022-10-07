@@ -24,8 +24,8 @@ export const { kcContext } = getKcContext<
 			},
 			"realm": {
 				"name": "pinkgreen",
-				"displayName": "Pinkgreen",
-				"displayNameHtml": "Pinkgreen"
+				"displayName": "Pinkgreen.",
+				"displayNameHtml": "Pinkgreen."
 			},
 			"profile": {
 				"attributes": [
@@ -87,8 +87,8 @@ export const { kcContext } = getKcContext<
 			},
 			"realm": {
 				"name": "pinkgreen",
-				"displayName": "Pinkgreen",
-				"displayNameHtml": "Pinkgreen"
+				"displayName": "Pinkgreen.",
+				"displayNameHtml": "Pinkgreen."
 			}
 		},
 		{
@@ -98,8 +98,8 @@ export const { kcContext } = getKcContext<
 			},
 			"realm": {
 				"name": "pinkgreen",
-				"displayName": "Pinkgreen",
-				"displayNameHtml": "Pinkgreen"
+				"displayName": "Pinkgreen.",
+				"displayNameHtml": "Pinkgreen."
 			}
 		},
 		{
@@ -109,8 +109,8 @@ export const { kcContext } = getKcContext<
 			},
 			"realm": {
 				"name": "pinkgreen",
-				"displayName": "Pinkgreen",
-				"displayNameHtml": "Pinkgreen"
+				"displayName": "Pinkgreen.",
+				"displayNameHtml": "Pinkgreen."
 			}
 		}
 	]
