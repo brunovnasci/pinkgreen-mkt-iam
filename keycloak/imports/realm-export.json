@@ -47,6 +47,14 @@
   "failureFactor" : 30,
   "roles" : {
     "realm" : [ {
+      "id" : "9ddfe20f-6191-4413-9eef-a15f27564d37",
+      "name" : "add-customer-favorite-product",
+      "description" : "",
+      "composite" : false,
+      "clientRole" : false,
+      "containerId" : "14a25c1a-0240-4e9a-b2bc-36998067de46",
+      "attributes" : { }
+    }, {
       "id" : "d6630a18-3500-4852-b241-4f5d25f163e5",
       "name" : "offline_access",
       "description" : "${role_offline-access}",
@@ -89,6 +97,14 @@
     }, {
       "id" : "41e28ace-e3e6-4b8f-9b6d-d79b56fa30b0",
       "name" : "create-product",
+      "description" : "",
+      "composite" : false,
+      "clientRole" : false,
+      "containerId" : "14a25c1a-0240-4e9a-b2bc-36998067de46",
+      "attributes" : { }
+    }, {
+      "id" : "7d77aef2-2b39-4de8-905f-b281e5bbff1e",
+      "name" : "delete-customer-favorite-product",
       "description" : "",
       "composite" : false,
       "clientRole" : false,
@@ -151,6 +167,14 @@
     }, {
       "id" : "f89ff9cf-1ac7-400b-be6c-67a669c39a6d",
       "name" : "update-order-status",
+      "description" : "",
+      "composite" : false,
+      "clientRole" : false,
+      "containerId" : "14a25c1a-0240-4e9a-b2bc-36998067de46",
+      "attributes" : { }
+    }, {
+      "id" : "c077a32a-13b2-49ff-842e-cdad0bb49be9",
+      "name" : "get-customer-favorite-products",
       "description" : "",
       "composite" : false,
       "clientRole" : false,
@@ -437,7 +461,7 @@
     "name" : "users",
     "path" : "/users",
     "attributes" : { },
-    "realmRoles" : [ "checkout-order", "get-customer-orders" ],
+    "realmRoles" : [ "add-customer-favorite-product", "delete-customer-favorite-product", "checkout-order", "get-customer-favorite-products", "get-customer-orders" ],
     "clientRoles" : { },
     "subGroups" : [ ]
   } ],
