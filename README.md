@@ -27,11 +27,11 @@ Custom Keycloak pages implementation powered by [Keycloakify](https://www.keyclo
 ### Building the final Keycloak image
   * Then, you need to build the docker image:
     ```bash
-    $ docker build . -t pinkgreen-mkt-iam:1.0.0
+    $ docker build . -t brunovnasci/pinkgreen-mkt-iam:1.0.0
     ```
   * Finally you can run the keycloak instance:
     ```bash
-    $ docker run --name pinkgreen-mkt-iam -p 8080:8080 -it pinkgreen-mkt-iam:1.0.0 start-dev --import-realm
+    $ docker run --name pinkgreen-mkt-iam -p 8080:8080 -it brunovnasci/pinkgreen-mkt-iam:1.0.0 start-dev --import-realm
     ```
   * The instance will be hosted on http://localhost:8080/. 
   * Access the Admin console with `username: admin` and `password: admin` on http://localhost:8080/admin.
