@@ -35,3 +35,10 @@ Custom Keycloak pages implementation powered by [Keycloakify](https://www.keyclo
     ```
   * The instance will be hosted on http://localhost:8080/. 
   * Access the Admin console with `username: admin` and `password: admin` on http://localhost:8080/admin.
+
+### Export realm configuration file
+  * Open Keycloak container file on your terminal
+  * Run the follow command to export the configuration file:
+  ```bash
+  $ ./opt/keycloak/bin/kc.sh export --dir /tmp/export --users realm_file --realm pinkgreen-mkt
+  ```

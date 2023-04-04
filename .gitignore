@@ -45,3 +45,7 @@ jspm_packages
 /build_keycloak
 /build
 *.lock
+.idea/misc.xml
+.idea/modules.xml
+.idea/pinkgreen-mkt-iam.iml
+.idea/vcs.xml
