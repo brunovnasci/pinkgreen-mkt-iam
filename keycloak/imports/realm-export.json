@@ -204,6 +204,14 @@
       "clientRole" : false,
       "containerId" : "14a25c1a-0240-4e9a-b2bc-36998067de46",
       "attributes" : { }
+    }, {
+      "id" : "4ee35bc9-9beb-4473-8522-bea1bd3b7922",
+      "name" : "get-order-by-id",
+      "description" : "",
+      "composite" : false,
+      "clientRole" : false,
+      "containerId" : "14a25c1a-0240-4e9a-b2bc-36998067de46",
+      "attributes" : { }
     } ],
     "client" : {
       "pinkgreen-mkt-service" : [ ],
@@ -477,7 +485,7 @@
     "name" : "order-administrator",
     "path" : "/order-administrator",
     "attributes" : { },
-    "realmRoles" : [ "update-order-status", "get-all-orders" ],
+    "realmRoles" : [ "update-order-status", "get-all-orders", "get-order-by-id" ],
     "clientRoles" : { },
     "subGroups" : [ ]
   }, {
